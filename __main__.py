@@ -28,7 +28,7 @@ with urllib.request.urlopen(base_url + json_url) as url:
 
 background_folder = Path(save_loc)
 if not background_folder.exists():
-    print("Creating backgrounds folder at \"" + background_folder + "\"...")
+    print("Creating backgrounds folder at \"" + str(background_folder) + "\"...")
     os.makedirs(background_folder)  # background_folder doesn't exists, create it
 
 print("Downloading image...")
