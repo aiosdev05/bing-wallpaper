@@ -1,6 +1,6 @@
 """
 Author: Brian Wing
-Version: 2018.9.4
+Version: 2018.10.3
 License: Apache
 """
 
@@ -32,8 +32,10 @@ if not background_folder.exists():
     os.makedirs(background_folder)  # background_folder doesn't exists, create it
 
 print("Downloading image...")
-
 urllib.request.urlretrieve(base_url + img_url, save_loc + img_name)  # Download img from Bing and save in save location
+
+print("Setting image as background...")
 ctypes.windll.user32.SystemParametersInfoW(20, 0, save_loc + img_name, 0)  # Set the downloaded image as the wallpaper
 
+print("Complete")
 exit(0)
