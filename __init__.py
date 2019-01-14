@@ -1,7 +1,8 @@
 """
 Author: Brian Wing
-Version: 2018.10.3
-License: Apache
+Version: 2019.1.13
+License: Apache 2.0
+Description: This script is used to download the day's image from bing.com and set it as the dekstop wallpaper.
 """
 
 import urllib.request
