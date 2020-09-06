@@ -1,7 +1,2 @@
 # The Python packages required for this script to run.
-urllib
-json
-ctypes
 pathlib
-os
-getpass
